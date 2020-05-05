@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css?family|Open+Sans:300,400&display=swap");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+/*----------general variables----------*/
+/*----------day theme----------*/
+/*----------night theme----------*/
+/*colors*/
+/*fonts*/
+/*resources*/
+a {
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px 0;
+}
+
+.btn a {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.contaner {
+  margin: 0 auto;
+  max-width: 1565px;
+  min-width: 320px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contaner .header-contaner {
+  width: 100%;
+  padding: 10px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+.contaner .header-contaner-bar {
+  display: none;
+}
+
+.contaner .header-contaner-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contaner .header-contaner-logo a {
+  font-family: "Nova Cut", cursive;
+  font-size: 40px;
+  margin-left: 25px;
+}
+
+.contaner .header-contaner-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.contaner .header-contaner-nav .menu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contaner .header-contaner-nav .menu li a {
+  margin-right: 25px;
+}
+
+.contaner .header-contaner-nav .menu li a:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contaner .main-contaner {
+  width: 100%;
+}
+
+.contaner .main-contaner-banner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 12fr;
+      grid-template-columns: 12fr;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 675px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contaner .main-contaner-banner .banner-text p {
+  text-align: center;
+}
+
+.contaner .main-contaner-banner .banner-text p:first-child {
+  font-size: 85px;
+}
+
+.contaner .main-contaner-banner .banner-text p:last-child {
+  font-size: 50px;
+}
+
+.contaner .main-contaner-advantages {
+  min-height: 600px;
+  background-blend-mode: color;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contaner .main-contaner-advantages p {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.contaner .main-contaner-advantages .advantages-header {
+  margin: 0 0 25px 0;
+}
+
+.contaner .main-contaner-advantages .advantages-header .header {
+  font-size: 35px;
+}
+
+.contaner .main-contaner-advantages .advantages {
+  width: 100%;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contaner .main-contaner-advantages .advantages .advantage {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  max-width: 30%;
+}
+
+.contaner .main-contaner-advantages .advantages .advantage i {
+  font-size: 60px;
+}
+
+.contaner .main-contaner-advantages .advantages .advantage .name {
+  font-size: 40px;
+}
+
+.contaner .main-contaner-advantages .advantages .advantage .description {
+  font-size: 20px;
+}
+
+.contaner .main-contaner-advantages .advantages-about {
+  margin-bottom: 35px;
+}
+
+.contaner .main-contaner-advantages .travel-choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.contaner .main-contaner-advantages .travel-choice-header .header {
+  font-size: 40px;
+}
+
+.contaner .main-contaner-advantages .travel-choice-description .description {
+  font-size: 30px;
+}
+
+.contaner .main-contaner-hot {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 6fr;
+      grid-template-columns: 5fr 6fr;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 15px 0;
+}
+
+.contaner .main-contaner-hot .content-img-text {
+  position: absolute;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.contaner .main-contaner-hot .hot-content-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.contaner .main-contaner-hot .hot-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.contaner .main-contaner-hot .hot-content {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header ." "first second";
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.contaner .main-contaner-hot .hot-content .hot-content-header {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 300;
+  width: 260px;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  padding: 10px 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  margin-bottom: 0.65em;
+}
+
+.contaner .main-contaner-hot .hot-content .hot-content-first {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: first;
+}
+
+.contaner .main-contaner-hot .hot-content .hot-content-second {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: second;
+}
+/*# sourceMappingURL=general.css.map */
