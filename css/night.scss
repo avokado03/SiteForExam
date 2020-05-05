@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Nova+Cut|Open+Sans:300,400&display=swap');
+@import "variables.scss";
+
+body{ background-color: $night-back-color;}
+
+.btn{
+    border: 1px solid $night-hover-color;
+    background-color: $night-img-offset-color;
+    &:hover{
+        background-color: $nigth-button-hover-color;
+        transition: 0.5s;
+    }
+    a{
+        color: #fff;
+    }
+}
+
+.contaner{
+    color: #fff;
+    .header-contaner{        
+        background-color: $night-back-color;
+        a{
+            color: #fff;
+            &:hover{
+                color: $night-hover-color;
+            }
+        }
+    }
+    .main-contaner{
+        background: $night-advantages-img,$night-back-op-color;
+        background-blend-mode: color;
+        background-size: cover;
+        background-position-x: center;
+        &-banner{
+            background: $night-main-img;
+            .banner-text{
+                background-color: $night-img-offset-color;
+                p:first-child{
+                    font-family: $night-logo-font;
+                }
+            }
+        }
+        &-advantages{
+            
+            .description{
+                font-weight: 300;
+                color: $night-hover-color;
+            }
+        }
+
+        &-hot{
+            .hot-content{
+                .hot-content-header{
+                    border-color: #fff;
+                }
+            }
+        }
+    }
+}
