@@ -1,73 +1,88 @@
 @import url('https://fonts.googleapis.com/css?family=Nova+Cut|Open+Sans:300,400&display=swap');
 @import "variables.scss";
 
-body{ background-color: $night-back-color;}
+body {
+    background-color: $night-back-color;
+}
 
-.btn{
+.btn {
     border: 1px solid $night-hover-color;
     background-color: $night-img-offset-color;
-    &:hover{
+
+    &:hover {
         background-color: $nigth-button-hover-color;
         transition: 0.5s;
     }
-    a{
+
+    a {
         color: #fff;
     }
 }
 
-.contaner{
+h1 {
+    border-top-color: $night-img-offset-color;
+    border-bottom-color: $night-img-offset-color;
+}
+
+.contaner {
     color: #fff;
-    .header-contaner{        
+
+    .header-contaner {
         background-color: $night-back-color;
-        a{
+
+        a {
             color: #fff;
-            &:hover{
+
+            &:hover {
                 color: $night-hover-color;
             }
         }
     }
-    .main-contaner{
-        background: $night-advantages-img,$night-back-op-color;
+
+    .main-contaner {
+        background: $night-advantages-img, $night-back-op-color;
         background-blend-mode: color;
         background-size: cover;
         background-position-x: center;
-        &-banner{
+
+        &-banner {
             background: $night-main-img;
-            .banner-text{
+
+            .banner-text {
                 background-color: $night-img-offset-color;
-                p:first-child{
+
+                p:first-child {
                     font-family: $night-logo-font;
                 }
             }
         }
-        &-advantages{
-            
-            .description{
+
+        &-advantages {
+
+            .description {
                 font-weight: 300;
                 color: $night-hover-color;
             }
         }
 
-        &-hot{
-            .hot-header{
-                &-h{
-                    border-top: 3px solid $night-img-offset-color;
-                    border-bottom: 3px solid $night-img-offset-color;
-                }
-            }
-            &-first{
+        &-hot {
+            &-first {
                 background: $night-hot-content-first-img;
             }
-            &-second{
+
+            &-second {
                 background: $night-hot-content-second-img;
             }
-            &-third{
+
+            &-third {
                 background: $night-hot-content-third-img;
             }
-            &-fourth{
+
+            &-fourth {
                 background: $night-hot-content-fourth-img;
             }
-            &-fifth{
+
+            &-fifth {
                 background: $night-hot-content-fifth-img;
             }
         }

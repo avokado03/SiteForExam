@@ -6,6 +6,7 @@
 /*colors*/
 /*fonts*/
 /*resources*/
+/*todo border for h1*/
 a {
   text-decoration: none;
   letter-spacing: 1px;
@@ -30,6 +31,11 @@ a {
 .btn a {
   font-size: 25px;
   font-weight: 300;
+}
+
+h1 {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 .contaner {
@@ -264,12 +270,47 @@ a {
   text-transform: uppercase;
   font-size: 40px;
   padding: 10px 0;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
   margin: 0;
 }
 
 .contaner .main-contaner-hot .hot-header-description {
   font-size: 28px;
+}
+
+.contaner .main-contaner-about {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contaner .main-contaner-about-header .about-header {
+  text-align: center;
+}
+
+.contaner .main-contaner-about-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 30px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.contaner .main-contaner-about-content .about-content-map iframe {
+  width: 100%;
+  min-height: 300px;
+}
+
+.contaner .main-contaner-about-content .about-content-info {
+  font-size: 20px;
 }
 /*# sourceMappingURL=general.css.map */

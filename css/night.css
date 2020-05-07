@@ -24,6 +24,11 @@ body {
   color: #fff;
 }
 
+h1 {
+  border-top-color: rgba(166, 175, 161, 0.45);
+  border-bottom-color: rgba(166, 175, 161, 0.45);
+}
+
 .contaner {
   color: #fff;
 }
@@ -62,11 +67,6 @@ body {
 .contaner .main-contaner-advantages .description {
   font-weight: 300;
   color: #e2f1d4;
-}
-
-.contaner .main-contaner-hot .hot-header-h {
-  border-top: 3px solid rgba(166, 175, 161, 0.45);
-  border-bottom: 3px solid rgba(166, 175, 161, 0.45);
 }
 
 .contaner .main-contaner-hot-first {

@@ -2,6 +2,8 @@
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 @import "variables.scss";
 
+
+/*todo border for h1*/
 a {
     text-decoration: none;
     letter-spacing: 1px;
@@ -20,6 +22,11 @@ a {
         font-size: 25px;
         font-weight: 300;
     }
+}
+
+h1{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 .contaner {
@@ -200,12 +207,37 @@ a {
                     text-transform: uppercase;
                     font-size: 40px;
                     padding: 10px 0;
-                    border-top: 3px solid black;
-                    border-bottom: 3px solid black;
                     margin: 0;
                 }
                 &-description{
                     font-size: 28px;
+                }
+            }
+        }
+
+        &-about{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            &-header{
+                .about-header{
+                    text-align: center;
+                }
+            }
+            &-content{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                padding: 0 30px;
+                column-gap: 20px;
+                .about-content-map{
+                    iframe{
+                        width: 100%;
+                        min-height: 300px;
+                    }
+                }
+                .about-content-info{
+                    font-size: 20px;
                 }
             }
         }
