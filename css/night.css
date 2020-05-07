@@ -64,7 +64,28 @@ body {
   color: #e2f1d4;
 }
 
-.contaner .main-contaner-hot .hot-content .hot-content-header {
-  border-color: #fff;
+.contaner .main-contaner-hot .hot-header-h {
+  border-top: 3px solid rgba(166, 175, 161, 0.45);
+  border-bottom: 3px solid rgba(166, 175, 161, 0.45);
+}
+
+.contaner .main-contaner-hot-first {
+  background: url(/img/night/first.jpg);
+}
+
+.contaner .main-contaner-hot-second {
+  background: url(/img/night/second.jpg);
+}
+
+.contaner .main-contaner-hot-third {
+  background: url(/img/night/third.jpg);
+}
+
+.contaner .main-contaner-hot-fourth {
+  background: url(/img/night/fourth.jpg);
+}
+
+.contaner .main-contaner-hot-fifth {
+  background: url(/img/night/fifth.jpg);
 }
 /*# sourceMappingURL=night.css.map */

@@ -99,11 +99,11 @@ a {
         }
 
         &-advantages {
-            min-height: 600px;
+            min-height: 550px;
             background-blend-mode: color;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
 
             p {
@@ -112,7 +112,7 @@ a {
             }
 
             .advantages-header {
-                margin: 0 0 25px 0;
+                margin: 0 0 10px 0;
 
                 .header {
                     font-size: 35px;
@@ -121,11 +121,13 @@ a {
 
             .advantages {
                 width: 100%;
-                margin-bottom: 25px;
+                margin-bottom: 10px;
                 display: flex;
                 justify-items: center;
                 justify-content: space-around;
-
+                .advantages-about{
+                    margin-bottom: 0px;
+                }
                 .advantage {
                     display: grid;
                     align-content: flex-start;
@@ -145,15 +147,11 @@ a {
                 }
             }
 
-            .advantages-about {
-                margin-bottom: 35px;
-            }
-
             .travel-choice {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-top: 20px;
+                
 
                 &-header {
                     .header {
@@ -171,50 +169,43 @@ a {
 
         &-hot{
             display: grid;
-            grid-template-columns: 5fr 6fr;
-            align-items: start;
-            padding: 15px 0;
-            .content-img-text{
-                position: absolute;
-                font-size: 30px;
-                background-color: rgba($color:#fff, $alpha: 0.2);
-                width: 100%;
-                text-shadow: 0px 4px 4px $box-shadow-color;
-                text-align: center;
-            }
-            .hot-content-img{
-                display: flex;
-                align-items: flex-end;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            padding: 15px 30px 30px 30px;
+            div{
+                min-width: 30%;
+                min-height: 338px;
                 position: relative;
-            }
-            .hot-img{
+                background-size: cover;
+                background-position: right;
                 display: flex;
-                justify-content: center;
-                align-content: center;
+                flex-direction: column;
             }
             .hot-content{
-                display: grid;
-                grid-template-areas: "header ."
-                "first second";
-                justify-content: space-evenly;
-                align-content: center;
-                .hot-content-header{
+                justify-content: end;
+                .content-name{
+                    position: absolute;
+                    font-size: 35px;
                     text-transform: uppercase;
-                    font-size: 36px;
-                    font-weight: 300;
-                    width: 260px;
-                    border-top: 3px solid #000;
-                    border-bottom: 3px solid #000;
+                    text-shadow: 0px 10px 4px $box-shadow-color;
+                    background-color: $night-img-offset-color;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            .hot-header{
+                justify-content: center;
+                &-h{
+                    text-transform: uppercase;
+                    font-size: 40px;
                     padding: 10px 0;
-                    grid-area: header;
-                    align-self: start;
-                    margin-bottom: 0.65em;
+                    border-top: 3px solid black;
+                    border-bottom: 3px solid black;
+                    margin: 0;
                 }
-                .hot-content-first{
-                    grid-area: first;
-                }
-                .hot-content-second{
-                    grid-area: second;
+                &-description{
+                    font-size: 28px;
                 }
             }
         }

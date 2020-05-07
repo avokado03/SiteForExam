@@ -126,7 +126,7 @@ a {
 }
 
 .contaner .main-contaner-advantages {
-  min-height: 600px;
+  min-height: 550px;
   background-blend-mode: color;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,9 +135,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -149,7 +149,7 @@ a {
 }
 
 .contaner .main-contaner-advantages .advantages-header {
-  margin: 0 0 25px 0;
+  margin: 0 0 10px 0;
 }
 
 .contaner .main-contaner-advantages .advantages-header .header {
@@ -158,13 +158,17 @@ a {
 
 .contaner .main-contaner-advantages .advantages {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.contaner .main-contaner-advantages .advantages .advantages-about {
+  margin-bottom: 0px;
 }
 
 .contaner .main-contaner-advantages .advantages .advantage {
@@ -187,10 +191,6 @@ a {
   font-size: 20px;
 }
 
-.contaner .main-contaner-advantages .advantages-about {
-  margin-bottom: 35px;
-}
-
 .contaner .main-contaner-advantages .travel-choice {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,7 +202,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
 }
 
 .contaner .main-contaner-advantages .travel-choice-header .header {
@@ -216,81 +215,61 @@ a {
 .contaner .main-contaner-hot {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 5fr 6fr;
-      grid-template-columns: 5fr 6fr;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  padding: 15px 0;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 15px 30px 30px 30px;
 }
 
-.contaner .main-contaner-hot .content-img-text {
-  position: absolute;
-  font-size: 30px;
-  background-color: rgba(255, 255, 255, 0.2);
-  width: 100%;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  text-align: center;
-}
-
-.contaner .main-contaner-hot .hot-content-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+.contaner .main-contaner-hot div {
+  min-width: 30%;
+  min-height: 338px;
   position: relative;
-}
-
-.contaner .main-contaner-hot .hot-img {
+  background-size: cover;
+  background-position: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contaner .main-contaner-hot .hot-content {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "header ." "first second";
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
-.contaner .main-contaner-hot .hot-content .hot-content-header {
+.contaner .main-contaner-hot .hot-content .content-name {
+  position: absolute;
+  font-size: 35px;
   text-transform: uppercase;
-  font-size: 36px;
-  font-weight: 300;
-  width: 260px;
-  border-top: 3px solid #000;
-  border-bottom: 3px solid #000;
+  text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgba(166, 175, 161, 0.45);
+  width: 100%;
+  text-align: center;
+}
+
+.contaner .main-contaner-hot .hot-header {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contaner .main-contaner-hot .hot-header-h {
+  text-transform: uppercase;
+  font-size: 40px;
   padding: 10px 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: header;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-  margin-bottom: 0.65em;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  margin: 0;
 }
 
-.contaner .main-contaner-hot .hot-content .hot-content-first {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: first;
-}
-
-.contaner .main-contaner-hot .hot-content .hot-content-second {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: second;
+.contaner .main-contaner-hot .hot-header-description {
+  font-size: 28px;
 }
 /*# sourceMappingURL=general.css.map */

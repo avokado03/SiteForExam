@@ -49,10 +49,26 @@ body{ background-color: $night-back-color;}
         }
 
         &-hot{
-            .hot-content{
-                .hot-content-header{
-                    border-color: #fff;
+            .hot-header{
+                &-h{
+                    border-top: 3px solid $night-img-offset-color;
+                    border-bottom: 3px solid $night-img-offset-color;
                 }
+            }
+            &-first{
+                background: $night-hot-content-first-img;
+            }
+            &-second{
+                background: $night-hot-content-second-img;
+            }
+            &-third{
+                background: $night-hot-content-third-img;
+            }
+            &-fourth{
+                background: $night-hot-content-fourth-img;
+            }
+            &-fifth{
+                background: $night-hot-content-fifth-img;
             }
         }
     }
