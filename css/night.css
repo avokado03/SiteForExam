@@ -88,4 +88,16 @@ h1 {
 .contaner .main-contaner-hot-fifth {
   background: url(/img/night/fifth.jpg);
 }
+
+.contaner .main-contaner-hot .hot-header-description {
+  color: #e2f1d4;
+}
+
+.contaner .footer-contaner {
+  background-color: #000;
+}
+
+.contaner .footer-contaner p {
+  color: #e2f1d4;
+}
 /*# sourceMappingURL=night.css.map */

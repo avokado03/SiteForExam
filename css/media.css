@@ -147,6 +147,9 @@
   .contaner .main-contaner-hot .hot-header-description {
     font-size: 18px;
   }
+  .contaner .main-contaner-about {
+    gap: 0;
+  }
   .contaner .main-contaner-about-header .about-header {
     font-size: 25px;
   }
@@ -155,10 +158,13 @@
         grid-template-columns: 1fr;
     -ms-grid-rows: 0.8fr 1fr;
         grid-template-rows: 0.8fr 1fr;
-    padding: 0 10px;
   }
   .contaner .main-contaner-about-content .about-content-info {
     font-size: 15px;
+  }
+  .contaner .footer-contaner {
+    font-size: 12px;
+    padding: 0 10px 10px 10px;
   }
 }
 
@@ -209,7 +215,6 @@
     -ms-grid-rows: 0.5fr 2fr 2fr 2fr 2fr 2fr;
         grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 2fr;
     gap: 7px;
-    padding: 12px 12px 12px 12px;
   }
   .contaner .main-contaner-hot div {
     min-height: 150px;
@@ -221,6 +226,19 @@
     padding: 5px;
     border-top-width: 2px;
     border-bottom-width: 2px;
+  }
+  .contaner .main-contaner-about .about-content-info {
+    padding: 0 10px;
+  }
+  .contaner .main-contaner-about .about-content-info p {
+    font-size: 15px;
+  }
+  .contaner .footer-contaner {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    justify-items: left;
   }
 }
 /*# sourceMappingURL=media.css.map */

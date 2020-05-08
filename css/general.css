@@ -6,7 +6,6 @@
 /*colors*/
 /*fonts*/
 /*resources*/
-/*todo border for h1*/
 a {
   text-decoration: none;
   letter-spacing: 1px;
@@ -40,8 +39,9 @@ h1 {
 
 .contaner {
   margin: 0 auto;
-  max-width: 1565px;
+  max-width: 1550px;
   min-width: 320px;
+  width: 100%;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -275,6 +275,7 @@ h1 {
 
 .contaner .main-contaner-hot .hot-header-description {
   font-size: 28px;
+  font-weight: 300;
 }
 
 .contaner .main-contaner-about {
@@ -286,9 +287,17 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contaner .main-contaner-about-header {
+  width: 96%;
 }
 
 .contaner .main-contaner-about-header .about-header {
+  margin-top: 0;
   text-align: center;
 }
 
@@ -300,9 +309,9 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 30px;
   -webkit-column-gap: 20px;
           column-gap: 20px;
+  padding: 0 30px;
 }
 
 .contaner .main-contaner-about-content .about-content-map iframe {
@@ -312,5 +321,21 @@ h1 {
 
 .contaner .main-contaner-about-content .about-content-info {
   font-size: 20px;
+}
+
+.contaner .main-contaner-about-content .about-content-info .about-tour-list {
+  margin-top: 0;
+  padding-left: 15px;
+}
+
+.contaner .footer-contaner {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  background-color: #000;
+  justify-items: center;
+  padding-bottom: 15px;
 }
 /*# sourceMappingURL=general.css.map */

@@ -85,6 +85,17 @@ h1 {
             &-fifth {
                 background: $night-hot-content-fifth-img;
             }
+
+            .hot-header-description{
+                color: $night-hover-color;
+            }
+        }
+    }
+
+    .footer-contaner{
+        background-color: #000;
+        p{
+            color: $night-hover-color;
         }
     }
 }

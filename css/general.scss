@@ -2,8 +2,6 @@
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 @import "variables.scss";
 
-
-/*todo border for h1*/
 a {
     text-decoration: none;
     letter-spacing: 1px;
@@ -31,8 +29,9 @@ h1{
 
 .contaner {
     margin: 0 auto;
-    max-width: 1565px;
+    max-width: 1550px;
     min-width: 320px;
+    width: 100%;
     font-family: $general-font-family;
 
     .header-contaner {
@@ -211,6 +210,7 @@ h1{
                 }
                 &-description{
                     font-size: 28px;
+                    font-weight: 300;
                 }
             }
         }
@@ -219,8 +219,11 @@ h1{
             width: 100%;
             display: flex;
             flex-direction: column;
+            align-items: center;
             &-header{
+                width: 96%;
                 .about-header{
+                    margin-top: 0;
                     text-align: center;
                 }
             }
@@ -228,8 +231,8 @@ h1{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 align-items: center;
-                padding: 0 30px;
                 column-gap: 20px;
+                padding: 0 30px;
                 .about-content-map{
                     iframe{
                         width: 100%;
@@ -238,8 +241,21 @@ h1{
                 }
                 .about-content-info{
                     font-size: 20px;
+                    .about-tour-list{
+                        margin-top: 0;
+                        padding-left: 15px;
+                    }
                 }
             }
         }
+    }
+
+    .footer-contaner{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #000;
+        justify-items: center;
+        padding-bottom: 15px;
     }
 }

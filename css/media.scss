@@ -177,6 +177,7 @@
             }
 
             &-about{
+                gap: 0;
                 &-header{
                     .about-header{
                         font-size: 25px;
@@ -185,12 +186,16 @@
                 &-content{
                     grid-template-columns: 1fr;
                     grid-template-rows: 0.8fr 1fr;
-                    padding: 0 10px;
                     .about-content-info{
                         font-size: 15px;
                     }
                 }
             }
+        }
+
+        .footer-contaner{
+            font-size: 12px;
+            padding: 0 10px 10px 10px;
         }
     }
 }
@@ -235,7 +240,6 @@
                 grid-template-columns: 1fr;
                 grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 2fr;
                 gap: 7px;
-                padding: 12px 12px 12px 12px;
                 div{
                     min-height: 150px;
                 }
@@ -252,6 +256,21 @@
                     }
                 }
             }
+
+            &-about{
+                .about-content-info{
+                    padding: 0 10px;
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        .footer-contaner{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-items: left;
         }
     }
 }
