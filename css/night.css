@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Nova+Cut|Open+Sans:300,400&display=swap");
+/*----------general variables----------*/
+/*----------day theme----------*/
+/*----------night theme----------*/
+/*colors*/
+/*fonts*/
+/*resources*/
+body {
+  background-color: #2F3C16;
+}
+
+.btn {
+  border: 1px solid #e2f1d4;
+  background-color: rgba(166, 175, 161, 0.45);
+}
+
+.btn:hover {
+  background-color: rgba(57, 80, 36, 0.3);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn a {
+  color: #fff;
+}
+
+h1 {
+  border-top-color: rgba(166, 175, 161, 0.45);
+  border-bottom-color: rgba(166, 175, 161, 0.45);
+}
+
+.contaner {
+  color: #fff;
+}
+
+.contaner .header-contaner {
+  background-color: #2F3C16;
+}
+
+.contaner .header-contaner a {
+  color: #fff;
+}
+
+.contaner .header-contaner a:hover {
+  color: #e2f1d4;
+}
+
+.contaner .main-contaner {
+  background: url("../img/night/elky.png"), rgba(40, 60, 22, 0.8);
+  background-blend-mode: color;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.contaner .main-contaner-banner {
+  background: url("../img/night/utro.jpg");
+}
+
+.contaner .main-contaner-banner .banner-text {
+  background-color: rgba(166, 175, 161, 0.45);
+}
+
+.contaner .main-contaner-banner .banner-text p:first-child {
+  font-family: "Nova Cut", cursive;
+}
+
+.contaner .main-contaner-advantages .description {
+  font-weight: 300;
+  color: #e2f1d4;
+}
+
+.contaner .main-contaner-hot-first {
+  background: url(/img/night/first.jpg);
+}
+
+.contaner .main-contaner-hot-second {
+  background: url(/img/night/second.jpg);
+}
+
+.contaner .main-contaner-hot-third {
+  background: url(/img/night/third.jpg);
+}
+
+.contaner .main-contaner-hot-fourth {
+  background: url(/img/night/fourth.jpg);
+}
+
+.contaner .main-contaner-hot-fifth {
+  background: url(/img/night/fifth.jpg);
+}
+
+.contaner .main-contaner-hot .hot-header-description {
+  color: #e2f1d4;
+}
+
+.contaner .footer-contaner {
+  background-color: #000;
+}
+
+.contaner .footer-contaner p {
+  color: #e2f1d4;
+}
+/*# sourceMappingURL=night.css.map */

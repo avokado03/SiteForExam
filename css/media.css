@@ -1,0 +1,244 @@
+@media screen and (max-width: 1110px) {
+  .contaner {
+    max-width: 1110px;
+  }
+  .contaner .main-contaner-advantages .advantages-header .header {
+    font-size: 28px;
+  }
+  .contaner .main-contaner-advantages .advantages .advantage .name {
+    font-size: 28px;
+  }
+  .contaner .main-contaner-advantages .travel-choice {
+    margin-top: 10px;
+  }
+  .contaner .main-contaner-advantages .travel-choice-header .header {
+    font-size: 28px;
+  }
+  .contaner .main-contaner-advantages .travel-choice-description .description {
+    font-size: 20px;
+  }
+  .contaner .main-contaner-hot {
+    gap: 17px;
+  }
+  .contaner .main-contaner-hot div {
+    min-height: 300px;
+  }
+  .contaner .main-contaner-hot .hot-content .content-name {
+    font-size: 30px;
+  }
+  .contaner .main-contaner-hot .hot-header-h {
+    font-size: 35px;
+  }
+  .contaner .main-contaner-hot .hot-header-description {
+    font-size: 23px;
+  }
+  .contaner .main-contaner-about-content .about-content-info {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contaner .main-contaner-hot {
+    gap: 17px;
+  }
+  .contaner .main-contaner-hot div {
+    min-height: 300px;
+  }
+  .contaner .main-contaner-hot .hot-content .content-name {
+    font-size: 25px;
+  }
+  .contaner .main-contaner-hot .hot-header-h {
+    font-size: 30px;
+  }
+  .contaner .main-contaner-hot .hot-header-description {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .btn {
+    width: 300px;
+  }
+  .btn a {
+    font-size: 24px;
+  }
+  .contaner {
+    max-width: 800px;
+  }
+  .contaner .header-contaner {
+    max-height: 45px;
+  }
+  .contaner .header-contaner-logo {
+    max-height: 45px;
+  }
+  .contaner .main-contaner-banner {
+    min-height: 500px;
+  }
+  .contaner .main-contaner-banner .banner-text p:first-child {
+    font-size: 60px;
+  }
+  .contaner .main-contaner-banner .banner-text p:last-child {
+    font-size: 30px;
+  }
+  .contaner .main-contaner-advantages .advantages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 15px;
+  }
+  .contaner .main-contaner-advantages .advantages .advantage {
+    display: -ms-grid;
+    display: grid;
+    max-width: 100%;
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+    -ms-grid-rows: 0.5fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+  }
+  .contaner .main-contaner-advantages .advantages .advantage p {
+    text-align: left;
+  }
+  .contaner .main-contaner-advantages .advantages .advantage .name {
+    font-size: 24px;
+  }
+  .contaner .main-contaner-advantages .advantages .advantage-description {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .contaner .main-contaner-advantages .advantages .advantage-icon {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/ span 2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .contaner .main-contaner-advantages .advantages .advantage-icon p {
+    text-align: center;
+  }
+  .contaner .main-contaner-advantages .travel-choice {
+    margin-top: 10px;
+  }
+  .contaner .main-contaner-advantages .travel-choice-header .header {
+    font-size: 28px;
+  }
+  .contaner .main-contaner-advantages .travel-choice-description .description {
+    font-size: 20px;
+  }
+  .contaner .main-contaner-hot {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px 15px 15px 15px;
+  }
+  .contaner .main-contaner-hot div {
+    min-height: 200px;
+  }
+  .contaner .main-contaner-hot .hot-content .content-name {
+    font-size: 25px;
+  }
+  .contaner .main-contaner-hot .hot-header-h {
+    font-size: 25px;
+    padding: 7px;
+  }
+  .contaner .main-contaner-hot .hot-header-description {
+    font-size: 18px;
+  }
+  .contaner .main-contaner-about {
+    gap: 0;
+  }
+  .contaner .main-contaner-about-header .about-header {
+    font-size: 25px;
+  }
+  .contaner .main-contaner-about-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.8fr 1fr;
+        grid-template-rows: 0.8fr 1fr;
+  }
+  .contaner .main-contaner-about-content .about-content-info {
+    font-size: 15px;
+  }
+  .contaner .footer-contaner {
+    font-size: 12px;
+    padding: 0 10px 10px 10px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .contaner {
+    max-width: 580px;
+  }
+  .contaner .header-contaner {
+    -ms-grid-columns: 1fr 1fr 9fr;
+        grid-template-columns: 1fr 1fr 9fr;
+  }
+  .contaner .header-contaner-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 30px;
+    max-height: 45px;
+  }
+  .contaner .header-contaner-bar .bar {
+    font-size: 35px;
+    line-height: 0px;
+    position: absolute;
+    margin-bottom: 15px;
+  }
+  .contaner .header-contaner-logo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contaner .header-contaner-nav {
+    display: none;
+  }
+  .contaner .main-contaner {
+    min-height: 300px;
+  }
+  .contaner .main-contaner .banner-text p:first-child {
+    font-size: 40px;
+  }
+  .contaner .main-contaner .banner-text p:last-child {
+    font-size: 20px;
+  }
+  .contaner .main-contaner-hot {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.5fr 2fr 2fr 2fr 2fr 2fr;
+        grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 2fr;
+    gap: 7px;
+  }
+  .contaner .main-contaner-hot div {
+    min-height: 150px;
+  }
+  .contaner .main-contaner-hot .hot-content .content-name {
+    font-size: 20px;
+  }
+  .contaner .main-contaner-hot .hot-header-h {
+    padding: 5px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+  }
+  .contaner .main-contaner-about .about-content-info {
+    padding: 0 10px;
+  }
+  .contaner .main-contaner-about .about-content-info p {
+    font-size: 15px;
+  }
+  .contaner .footer-contaner {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    justify-items: left;
+  }
+}
+/*# sourceMappingURL=media.css.map */
