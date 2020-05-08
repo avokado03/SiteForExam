@@ -156,10 +156,12 @@ h1 {
 
 .contaner .main-contaner-advantages .advantages-header {
   margin: 0 0 10px 0;
+  width: 96%;
 }
 
 .contaner .main-contaner-advantages .advantages-header .header {
   font-size: 35px;
+  text-align: center;
 }
 
 .contaner .main-contaner-advantages .advantages {
