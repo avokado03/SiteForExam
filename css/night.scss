@@ -5,31 +5,16 @@ body {
     background-color: $night-back-color;
 }
 
-.btn {
-    border: 1px solid $night-hover-color;
-    background-color: $night-img-offset-color;
 
-    &:hover {
-        background-color: $nigth-button-hover-color;
-        transition: 0.5s;
-    }
-
-    a {
-        color: #fff;
-    }
-}
-
-h1 {
-    border-top-color: $night-img-offset-color;
-    border-bottom-color: $night-img-offset-color;
-}
-
-.contaner {
+.night {
     color: #fff;
 
     .header-contaner {
         background-color: $night-back-color;
-
+        &-logo{
+            a{
+            font-family: $night-logo-font;}
+        }
         a {
             color: #fff;
 

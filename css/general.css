@@ -2,6 +2,9 @@
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 /*----------general variables----------*/
 /*----------day theme----------*/
+/*colors*/
+/*fonts*/
+/*resources*/
 /*----------night theme----------*/
 /*colors*/
 /*fonts*/
@@ -25,16 +28,25 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 5px 0;
+  border: 1px solid #e2f1d4;
+  background-color: rgba(166, 175, 161, 0.45);
 }
 
 .btn a {
   font-size: 25px;
   font-weight: 300;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: rgba(57, 80, 36, 0.3);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 h1 {
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
+  border-top: 3px solid rgba(166, 175, 161, 0.45);
+  border-bottom: 3px solid rgba(166, 175, 161, 0.45);
 }
 
 .contaner {
@@ -43,6 +55,7 @@ h1 {
   min-width: 320px;
   width: 100%;
   font-family: "Open Sans", sans-serif;
+  color: #fff;
 }
 
 .contaner .header-contaner {
@@ -68,9 +81,14 @@ h1 {
 }
 
 .contaner .header-contaner-logo a {
-  font-family: "Nova Cut", cursive;
+  font-family: "Open Sans", sans-serif;
   font-size: 40px;
   margin-left: 25px;
+}
+
+.contaner .header-contaner-logo a:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .contaner .header-contaner-nav {
@@ -107,6 +125,7 @@ h1 {
   display: grid;
   -ms-grid-columns: 12fr;
       grid-template-columns: 12fr;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 675px;
@@ -277,7 +296,6 @@ h1 {
 
 .contaner .main-contaner-hot .hot-header-description {
   font-size: 28px;
-  font-weight: 300;
 }
 
 .contaner .main-contaner-about {

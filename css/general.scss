@@ -15,16 +15,22 @@ a {
     align-items: center;
     justify-content: center;
     margin: 5px 0;
-
+    border: 1px solid $night-hover-color;
+    background-color: $night-img-offset-color;
     a {
         font-size: 25px;
         font-weight: 300;
+        color: #fff;
+    }
+    &:hover {
+        background-color: $nigth-button-hover-color;
+        transition: 0.5s;
     }
 }
 
-h1{
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
+h1 {
+    border-top: 3px solid $night-img-offset-color;
+    border-bottom: 3px solid $night-img-offset-color;
 }
 
 .contaner {
@@ -33,7 +39,7 @@ h1{
     min-width: 320px;
     width: 100%;
     font-family: $general-font-family;
-
+    color: #fff;
     .header-contaner {
         width: 100%;
         padding: 10px 0;
@@ -49,9 +55,12 @@ h1{
             align-items: center;
 
             a {
-                font-family: $night-logo-font;
+                font-family: $general-font-family;
                 font-size: 40px;
                 margin-left: 25px;
+                &:hover {
+                    transition: .3s;
+                }
             }
         }
 
@@ -82,6 +91,7 @@ h1{
         &-banner {
             display: grid;
             grid-template-columns: 12fr;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             min-height: 675px;
@@ -211,7 +221,6 @@ h1{
                 }
                 &-description{
                     font-size: 28px;
-                    font-weight: 300;
                 }
             }
         }

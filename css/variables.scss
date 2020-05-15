@@ -4,6 +4,27 @@ $box-shadow-color: rgba(0, 0, 0, 0.25);
 
 /*----------day theme----------*/
 
+/*colors*/
+$day-back-color: #64A2AD;
+$day-back-op-color: rgba(255,255,255, 0.3);
+$day-hover-color: rgb(230, 223, 208);
+$day-img-offset-color:  rgba(108, 174, 185, 0.4);
+$day-button-hover-color: $day-img-offset-color;
+$day-footer-back-color: #121810;
+$day-font-color: #d3eceb;
+/*fonts*/
+$day-logo-font:'Chilanka', cursive;
+
+/*resources*/
+$day-main-img: url("../img/day/utro1.jpg");
+$day-advantages-img: url("/img/day/palma.png");
+$day-hot-content-img: url("../img/night/hot-content-img.jpg");
+$day-hot-content-first-img: url(/img/day/first.jpg);
+$day-hot-content-second-img: url(/img/day/second.jpg);
+$day-hot-content-third-img: url(/img/day/third.jpg);
+$day-hot-content-fourth-img: url(/img/day/fourth.jpg);
+$day-hot-content-fifth-img: url(/img/day/fifth.jpg);
+
 /*----------night theme----------*/
 
 /*colors*/

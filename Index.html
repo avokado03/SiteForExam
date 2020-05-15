@@ -8,14 +8,17 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/night.css" />
+    <link rel="stylesheet" href="css/day.css" />
+    <link rel="stylesheet" href="css/night.css">
     <link rel="stylesheet" href="css/media.css" />
 
+    <!--FontAwesome icons script-->
     <script src="https://kit.fontawesome.com/eff7c6bf02.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
-    <div class="contaner">
+    <div class="contaner day">
         <header class="header-contaner">
             <div class="header-contaner-bar">
                 <i class="bar fas fa-bars"></i>
@@ -25,9 +28,9 @@
             </div>
             <nav class="header-contaner-nav">
                 <ul class="menu">
-                    <li><a href="#">Подобрать путевку</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#" title="Изменить тему"><i class="theme far fa-sun"></i></a></li>
+                    <li><a href="#choice">Подобрать путевку</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a class="theme-btn" href="#" title="Изменить тему"><i class="fas fa-cloud-sun"></i></a></li>
                 </ul>
             </nav>
         </header>
@@ -88,7 +91,7 @@
                         <a href="#" class="about-btn">Узнать больше</a>
                     </div>
                 </div>
-                <div class="travel-choice">
+                <div class="travel-choice" id="choice">
                     <div class="travel-choice-header">
                         <p class="header">Не знаете, куда отправиться?</p>
                     </div>
@@ -105,25 +108,25 @@
             <section class="main-contaner-hot">
                 <div class="hot-header">
                     <h1 class="hot-header-h">Самые популярные предложения:</h1>
-                    <p class="hot-header-description">Эти направления чаще всего выбирают наши клиенты.</p>
+                    <p class="hot-header-description description">Эти направления чаще всего выбирают наши клиенты.</p>
                 </div>
                 <div class="main-contaner-hot-first hot-content">
-                    <p class="content-name">123</p>
+                    <p class="content-name first">123</p>
                 </div>
                 <div class="main-contaner-hot-second hot-content">
-                    <p class="content-name">123</p>
+                    <p class="content-name second">123</p>
                 </div>
                 <div class="main-contaner-hot-third hot-content">
-                    <p class="content-name">123</p>
+                    <p class="content-name third">123</p>
                 </div>
                 <div class="main-contaner-hot-fourth hot-content">
-                    <p class="content-name">123</p>
+                    <p class="content-name fourth">123</p>
                 </div>
                 <div class="main-contaner-hot-fifth hot-content">
-                    <p class="content-name">123</p>
+                    <p class="content-name fifth">123</p>
                 </div>
             </section>
-            <section class="main-contaner-about">
+            <section class="main-contaner-about" id="about">
                 <div class="main-contaner-about-header">
                     <h1 class="about-header">О нас</h1>
                 </div>
@@ -166,6 +169,7 @@
             </div>
         </footer>
     </div>
+    <script src="/scripts/theme.js"></script>
 </body>
 
 </html>
