@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Open+Sans&display=swap');
+@import "variables.scss";
+
+body {
+    background-color: $day-back-color;
+}
+
+
+.description{
+    color: $day-font-color;
+}
+
+.day {
+    .header-contaner {
+        background-color: $day-back-color;
+        &-logo{
+            a{
+                font-family: $day-logo-font;
+                padding-top: 10px;
+            }
+        }
+
+        a {
+            color: #fff;
+
+            &:hover {
+                color: $day-hover-color;
+            }
+        }
+    }
+
+    .main-contaner {
+        background: $day-advantages-img, $day-img-offset-color;
+        background-blend-mode: color-burn;
+        background-size: cover;
+        background-position: center;
+        &-banner {
+            background: $day-main-img;
+            background-size: cover;
+            background-position-y: bottom;
+            .banner-text {
+                background-color: rgba(176, 217, 224, 0.6);
+
+                p:first-child {
+                    font-family: $day-logo-font;
+                }
+            }
+        }
+
+        &-hot {
+            &-first {
+                background: $day-hot-content-first-img;
+            }
+
+            &-second {
+                background: $day-hot-content-second-img;
+            }
+
+            &-third {
+                background: $day-hot-content-third-img;
+            }
+
+            &-fourth {
+                background: $day-hot-content-fourth-img;
+            }
+
+            &-fifth {
+                background: $day-hot-content-fifth-img;
+            }
+        }
+
+
+    }
+
+    .footer-contaner{
+        background-color: #000;
+        p{
+            color: $day-hover-color;
+        }
+    }
+}

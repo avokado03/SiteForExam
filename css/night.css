@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Nova+Cut|Open+Sans:300,400&display=swap");
 /*----------general variables----------*/
 /*----------day theme----------*/
+/*colors*/
+/*fonts*/
+/*resources*/
 /*----------night theme----------*/
 /*colors*/
 /*fonts*/
@@ -9,95 +12,79 @@ body {
   background-color: #2F3C16;
 }
 
-.btn {
-  border: 1px solid #e2f1d4;
-  background-color: rgba(166, 175, 161, 0.45);
-}
-
-.btn:hover {
-  background-color: rgba(57, 80, 36, 0.3);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.btn a {
+.night {
   color: #fff;
 }
 
-h1 {
-  border-top-color: rgba(166, 175, 161, 0.45);
-  border-bottom-color: rgba(166, 175, 161, 0.45);
-}
-
-.contaner {
-  color: #fff;
-}
-
-.contaner .header-contaner {
+.night .header-contaner {
   background-color: #2F3C16;
 }
 
-.contaner .header-contaner a {
+.night .header-contaner-logo a {
+  font-family: "Nova Cut", cursive;
+}
+
+.night .header-contaner a {
   color: #fff;
 }
 
-.contaner .header-contaner a:hover {
+.night .header-contaner a:hover {
   color: #e2f1d4;
 }
 
-.contaner .main-contaner {
+.night .main-contaner {
   background: url("../img/night/elky.png"), rgba(40, 60, 22, 0.8);
   background-blend-mode: color;
   background-size: cover;
   background-position-x: center;
 }
 
-.contaner .main-contaner-banner {
+.night .main-contaner-banner {
   background: url("../img/night/utro.jpg");
 }
 
-.contaner .main-contaner-banner .banner-text {
+.night .main-contaner-banner .banner-text {
   background-color: rgba(166, 175, 161, 0.45);
 }
 
-.contaner .main-contaner-banner .banner-text p:first-child {
+.night .main-contaner-banner .banner-text p:first-child {
   font-family: "Nova Cut", cursive;
 }
 
-.contaner .main-contaner-advantages .description {
+.night .main-contaner-advantages .description {
   font-weight: 300;
   color: #e2f1d4;
 }
 
-.contaner .main-contaner-hot-first {
+.night .main-contaner-hot-first {
   background: url(/img/night/first.jpg);
 }
 
-.contaner .main-contaner-hot-second {
+.night .main-contaner-hot-second {
   background: url(/img/night/second.jpg);
 }
 
-.contaner .main-contaner-hot-third {
+.night .main-contaner-hot-third {
   background: url(/img/night/third.jpg);
 }
 
-.contaner .main-contaner-hot-fourth {
+.night .main-contaner-hot-fourth {
   background: url(/img/night/fourth.jpg);
 }
 
-.contaner .main-contaner-hot-fifth {
+.night .main-contaner-hot-fifth {
   background: url(/img/night/fifth.jpg);
 }
 
-.contaner .main-contaner-hot .hot-header-description {
+.night .main-contaner-hot .hot-header-description {
   color: #e2f1d4;
 }
 
-.contaner .footer-contaner {
+.night .footer-contaner {
   background-color: #000;
 }
 
-.contaner .footer-contaner p {
+.night .footer-contaner p {
   color: #e2f1d4;
 }
 /*# sourceMappingURL=night.css.map */

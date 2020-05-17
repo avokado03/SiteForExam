@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&family=Open+Sans&display=swap");
+/*----------general variables----------*/
+/*----------day theme----------*/
+/*colors*/
+/*fonts*/
+/*resources*/
+/*----------night theme----------*/
+/*colors*/
+/*fonts*/
+/*resources*/
+body {
+  background-color: #64A2AD;
+}
+
+.description {
+  color: #d3eceb;
+}
+
+.day .header-contaner {
+  background-color: #64A2AD;
+}
+
+.day .header-contaner-logo a {
+  font-family: "Chilanka", cursive;
+  padding-top: 10px;
+}
+
+.day .header-contaner a {
+  color: #fff;
+}
+
+.day .header-contaner a:hover {
+  color: #e6dfd0;
+}
+
+.day .main-contaner {
+  background: url("/img/day/palma.png"), rgba(108, 174, 185, 0.4);
+  background-blend-mode: color-burn;
+  background-size: cover;
+  background-position: center;
+}
+
+.day .main-contaner-banner {
+  background: url("../img/day/utro1.jpg");
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+.day .main-contaner-banner .banner-text {
+  background-color: rgba(176, 217, 224, 0.6);
+}
+
+.day .main-contaner-banner .banner-text p:first-child {
+  font-family: "Chilanka", cursive;
+}
+
+.day .main-contaner-hot-first {
+  background: url(/img/day/first.jpg);
+}
+
+.day .main-contaner-hot-second {
+  background: url(/img/day/second.jpg);
+}
+
+.day .main-contaner-hot-third {
+  background: url(/img/day/third.jpg);
+}
+
+.day .main-contaner-hot-fourth {
+  background: url(/img/day/fourth.jpg);
+}
+
+.day .main-contaner-hot-fifth {
+  background: url(/img/day/fifth.jpg);
+}
+
+.day .footer-contaner {
+  background-color: #000;
+}
+
+.day .footer-contaner p {
+  color: #e6dfd0;
+}
+/*# sourceMappingURL=day.css.map */
