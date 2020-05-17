@@ -42,9 +42,14 @@ body {
                 background-color: rgba(176, 217, 224, 0.6);
 
                 p:first-child {
+                    padding-top: 1%;
                     font-family: $day-logo-font;
                 }
             }
+        }
+
+        &-burger{
+            background: $day-back-color;
         }
 
         &-hot {

@@ -1,3 +1,7 @@
+/*jshint esversion: 6 */
+/* jshint browser: true */
+/* jshint -W097 */
+'use strict';
 
 //objects for different tours names 
 let hotTours = {
@@ -17,20 +21,37 @@ let hotToursRef = {
 
 
 let contanerClasses = document.querySelector('.contaner').classList;
-let themeBtn = document.querySelector('.theme-btn');
+let themeBtns = document.querySelectorAll('.theme-btn');
+let burgerBtn = document.querySelector('.bar');
 
-ThemeChange();
 
-// theme applying
-function ThemeChange(){
-    if (contanerClasses.contains('day'))
-        GoToDay();
-    if (contanerClasses.contains('night'))
-        GoToNight();
-    ThemeTextChange();
+themeChange();
+bindEvent(themeBtnClick, 'click', themeBtns);
+
+
+/* function for binding an event
+*  with all of needed elements
+*  with same class e.g.
+*/
+function bindEvent(callback, event, targets)
+{
+    targets.forEach(target => {
+        target.addEventListener(event, callback);
+    });
 }
 
-function ThemeTextChange(){
+// theme applying
+function themeChange(){
+    if (contanerClasses.contains('day'))
+        goToDay();
+    if (contanerClasses.contains('night'))
+        goToNight();
+    themeTextChange();
+}
+
+/*Theme block start*/
+/*TODO: to separate document*/
+function themeTextChange(){
     hotToursRef.first.textContent = hotTours.first;
     hotToursRef.second.textContent = hotTours.second;
     hotToursRef.third.textContent = hotTours.third;
@@ -38,7 +59,7 @@ function ThemeTextChange(){
     hotToursRef.fifth.textContent = hotTours.fifth;
 }
 
-function GoToDay(){
+function goToDay(){
     hotTours.first = "Барбадос";
     hotTours.second ='Куба'; 
     hotTours.third = 'Гаваи';
@@ -46,7 +67,7 @@ function GoToDay(){
     hotTours.fifth = 'Новая Зеландия';
 }
 
-function GoToNight(){
+function goToNight(){
     hotTours.first = "Нидерланды";
     hotTours.second ='Исландия'; 
     hotTours.third = 'Дания';
@@ -54,10 +75,26 @@ function GoToNight(){
     hotTours.fifth = 'Финляндия';
 }
 
-themeBtn.onclick = function(){
+function themeBtnClick(){
     contanerClasses.toggle('day');
     contanerClasses.toggle('night');
-    ThemeChange();
+    themeChange();
+}
+/*Theme block end*/
+
+burgerBtn.onclick = function(){
+    let classList = burgerBtn.classList;
+    let banner = document.querySelector('.main-contaner-banner');
+    let menu = document.querySelector('.main-contaner-burger');
+    classList.toggle('fa-bars');
+    classList.toggle('fa-times');
+    toggleDisplay(banner, 'none', 'grid');
+    toggleDisplay(menu, 'flex', 'none');
 };
+
+function toggleDisplay(element, from, to){
+    element.style.display = element.style.display === from ? to : from;    
+}
+
 
 

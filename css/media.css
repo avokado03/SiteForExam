@@ -41,9 +41,6 @@
   .contaner .main-contaner-hot {
     gap: 17px;
   }
-  .contaner .main-contaner-hot div {
-    min-height: 300px;
-  }
   .contaner .main-contaner-hot .hot-content .content-name {
     font-size: 25px;
   }
@@ -64,15 +61,6 @@
   }
   .contaner {
     max-width: 800px;
-  }
-  .contaner .header-contaner {
-    max-height: 45px;
-  }
-  .contaner .header-contaner-logo {
-    max-height: 45px;
-  }
-  .contaner .main-contaner-banner {
-    min-height: 500px;
   }
   .contaner .main-contaner-banner .banner-text p:first-child {
     font-size: 60px;
@@ -190,7 +178,6 @@
     font-size: 35px;
     line-height: 0px;
     position: absolute;
-    margin-bottom: 15px;
   }
   .contaner .header-contaner-logo {
     -webkit-box-align: center;

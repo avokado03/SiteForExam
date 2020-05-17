@@ -42,6 +42,10 @@ body {
             }
         }
 
+        &-burger{
+            background-color: $night-back-color;
+        }
+
         &-advantages {
 
             .description {
