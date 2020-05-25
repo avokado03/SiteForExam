@@ -9,9 +9,28 @@
 /*colors*/
 /*fonts*/
 /*resources*/
+.contaner .header-contaner-nav, .contaner .main-contaner-burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contaner .header-contaner-nav .menu, .contaner .main-contaner-burger .menu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 a {
   text-decoration: none;
   letter-spacing: 1px;
+  color: #fff;
+}
+
+a:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .btn {
@@ -35,7 +54,6 @@ a {
 .btn a {
   font-size: 25px;
   font-weight: 300;
-  color: #fff;
 }
 
 .btn:hover {
@@ -60,6 +78,7 @@ h1 {
 
 .contaner .header-contaner {
   width: 100%;
+  min-height: 5vh;
   padding: 10px 0;
   display: -ms-grid;
   display: grid;
@@ -86,34 +105,14 @@ h1 {
   margin-left: 25px;
 }
 
-.contaner .header-contaner-logo a:hover {
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
 .contaner .header-contaner-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
 }
 
-.contaner .header-contaner-nav .menu {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contaner .header-contaner-nav .menu li a {
+.contaner .header-contaner-nav a {
   margin-right: 25px;
-}
-
-.contaner .header-contaner-nav .menu li a:hover {
-  -webkit-transition: .3s;
-  transition: .3s;
 }
 
 .contaner .main-contaner {
@@ -127,8 +126,8 @@ h1 {
       grid-template-columns: 12fr;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  min-height: 675px;
+  background-position: right;
+  min-height: 90vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -136,6 +135,10 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contaner .main-contaner-banner .banner-text {
+  max-height: 30vh;
 }
 
 .contaner .main-contaner-banner .banner-text p {
@@ -148,6 +151,30 @@ h1 {
 
 .contaner .main-contaner-banner .banner-text p:last-child {
   font-size: 50px;
+}
+
+.contaner .main-contaner-burger {
+  display: none;
+  min-height: 90vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contaner .main-contaner-burger .menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 10px;
+  padding: 0;
+}
+
+.contaner .main-contaner-burger .menu li {
+  font-size: 30px;
 }
 
 .contaner .main-contaner-advantages {
@@ -237,6 +264,62 @@ h1 {
 
 .contaner .main-contaner-advantages .travel-choice-description .description {
   font-size: 30px;
+}
+
+.contaner .main-contaner-test {
+  display: none;
+  -ms-grid-columns: 1.74fr 3fr;
+      grid-template-columns: 1.74fr 3fr;
+  padding: 15px 30px 15px 30px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  background-color: #045c2b;
+  min-height: 400px;
+}
+
+.contaner .main-contaner-test-picture {
+  background-position: center;
+  background-size: cover;
+}
+
+.contaner .main-contaner-test-question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contaner .main-contaner-test-question .question-text {
+  font-size: 40px;
+}
+
+.contaner .main-contaner-test-question .answer {
+  padding: 5px;
+}
+
+.contaner .main-contaner-test-question .answer label {
+  font-size: 28px;
+}
+
+.contaner .main-contaner-test-question .result {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contaner .main-contaner-test-question .result p {
+  padding: 5px;
 }
 
 .contaner .main-contaner-hot {

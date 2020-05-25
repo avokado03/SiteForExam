@@ -51,7 +51,12 @@ body {
 }
 
 .day .main-contaner-banner .banner-text p:first-child {
+  padding-top: 1%;
   font-family: "Chilanka", cursive;
+}
+
+.day .main-contaner-burger {
+  background: #64A2AD;
 }
 
 .day .main-contaner-hot-first {

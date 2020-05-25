@@ -66,9 +66,6 @@
          .main-contaner{
             &-hot{
                 gap: 17px;
-                div{
-                    min-height: 300px;
-                }
                 .hot-content{
                     .content-name{
                         font-size: 25px;
@@ -97,15 +94,8 @@
     }
     .contaner {
         max-width: 800px;
-        .header-contaner{
-            max-height: 45px;
-            &-logo{
-                max-height: 45px;
-            }
-        }
         .main-contaner{
             &-banner{
-               min-height: 500px;
                 .banner-text{
                     p:first-child{
                         font-size: 60px;
@@ -216,7 +206,6 @@
                     font-size: 35px;
                     line-height: 0px;
                     position: absolute;
-                    margin-bottom: 15px;
                 }
             }
             &-logo{
