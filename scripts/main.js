@@ -1,9 +1,13 @@
 /*jshint esversion: 6 */
 /* jshint browser: true */
 /* jshint -W097 */
-'use strict';
+import Utils from "/scripts/Utils/Utils.js";
+import TestController from "/scripts/Controllers/TestController.js";
+import TestView from "/scripts/Views/TestView.js";
+import TestModel from "/scripts/Models/TestModel.js";
+import {questions} from "/scripts/Models/TourQuestionsMock.js";
+import {results} from "/scripts/Models/TourResultMock.js";
 
-//objects for different tours names 
 let hotTours = {
     first: '',
     second: '',
@@ -23,22 +27,30 @@ let hotToursRef = {
 let contanerClasses = document.querySelector('.contaner').classList;
 let themeBtns = document.querySelectorAll('.theme-btn');
 let burgerBtn = document.querySelector('.bar');
-
+let questionBtn = document.querySelector('.travel-choice-btn');
+let utils = new Utils();
+let target = document.querySelector('.main-contaner-test');
+target.style.display = 'none';
 
 themeChange();
-bindEvent(themeBtnClick, 'click', themeBtns);
+utils.bindEvent(themeBtnClick, 'click', themeBtns);
 
 
 /* function for binding an event
 *  with all of needed elements
 *  with same class e.g.
 */
-function bindEvent(callback, event, targets)
-{
-    targets.forEach(target => {
-        target.addEventListener(event, callback);
-    });
-}
+
+questionBtn.onclick = function(e){
+    e.preventDefault();
+    utils.toggleDisplay(target, 'none', 'grid');
+    let view = new TestView(target);
+    let model = new TestModel(1,questions,results);
+    let controller = new TestController(view, model);
+    controller.initialize();
+};
+
+
 
 // theme applying
 function themeChange(){
@@ -88,13 +100,12 @@ burgerBtn.onclick = function(){
     let menu = document.querySelector('.main-contaner-burger');
     classList.toggle('fa-bars');
     classList.toggle('fa-times');
-    toggleDisplay(banner, 'none', 'grid');
-    toggleDisplay(menu, 'flex', 'none');
+    utils.toggleDisplay(banner, 'none', 'grid');
+    utils.toggleDisplay(menu, 'flex', 'none');
 };
 
-function toggleDisplay(element, from, to){
-    element.style.display = element.style.display === from ? to : from;    
-}
+
+
 
 
 

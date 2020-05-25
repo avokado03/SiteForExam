@@ -197,6 +197,41 @@ h1 {
             }
         }
 
+        &-test{
+            display: none;
+            grid-template-columns: 1.74fr 3fr;
+            padding: 15px 30px 15px 30px;
+            column-gap: 30px;
+            background-color: rgb(4, 92, 43);
+            min-height: 400px;
+            &-picture{
+                background-position: center;
+                background-size: cover;
+            }
+            &-question{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .question-text{
+                    font-size: 40px;
+                }
+                .answer{
+                    padding: 5px;
+                    label{
+                        font-size: 28px;
+                    }
+                }
+                .result{
+                    display: none;
+                    flex-direction: column;
+                    justify-content: center;
+                    p{
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+
         &-hot{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;

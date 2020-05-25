@@ -1,28 +1,29 @@
 /*jshint esversion: 6 */
 /* jshint browser: true */
 /* jshint -W097 */
-class Result extends TestEntity{
+import TestEntity from '/scripts/Models/TestEntity.js';
+export default class Result extends TestEntity{
     constructor(id, text, name, picturePath, from, to){
         super(id,text);
-        this.name = name;
-        this.picturePath = picturePath;
-        this.from = from;
-        this.to = to;
+        this._name = name;
+        this._picturePath = picturePath;
+        this._from = from;
+        this._to = to;
     }
 
     get name(){
-        return this.name;
+        return this._name;
     }
 
     get picturePath(){
-        return this.picturePath;
+        return this._picturePath;
     }
 
     get from(){
-        return this.from;
+        return this._from;
     }
 
     get to(){
-        return this.to;
+        return this._to;
     }
 }

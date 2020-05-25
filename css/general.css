@@ -120,7 +120,6 @@ h1 {
 }
 
 .contaner .main-contaner-banner {
-  display: none;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 12fr;
@@ -265,6 +264,62 @@ h1 {
 
 .contaner .main-contaner-advantages .travel-choice-description .description {
   font-size: 30px;
+}
+
+.contaner .main-contaner-test {
+  display: none;
+  -ms-grid-columns: 1.74fr 3fr;
+      grid-template-columns: 1.74fr 3fr;
+  padding: 15px 30px 15px 30px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  background-color: #045c2b;
+  min-height: 400px;
+}
+
+.contaner .main-contaner-test-picture {
+  background-position: center;
+  background-size: cover;
+}
+
+.contaner .main-contaner-test-question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contaner .main-contaner-test-question .question-text {
+  font-size: 40px;
+}
+
+.contaner .main-contaner-test-question .answer {
+  padding: 5px;
+}
+
+.contaner .main-contaner-test-question .answer label {
+  font-size: 28px;
+}
+
+.contaner .main-contaner-test-question .result {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contaner .main-contaner-test-question .result p {
+  padding: 5px;
 }
 
 .contaner .main-contaner-hot {

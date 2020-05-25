@@ -1,7 +1,10 @@
 /*jshint esversion: 6 */
 /* jshint browser: true */
 /* jshint -W097 */
-let results = [
+
+import Result from "/scripts/Models/ResultModel.js";
+
+export let results = [
     new Result(1, 'Вероятно, вы очарованы южным колоритом с его жаркой погодой, пляжами и экзотической едой.', 
         'Барбадос', '/img/night/first.jpg', 5, 7 ),
     new Result(2, 'Вам по душе холодные страны с их неповторимой культурой и природой севера',
