@@ -2,27 +2,11 @@
 /* jshint browser: true */
 /* jshint -W097 */
 
-export default class TestView{
+import ViewBase from '/scripts/Views/ViewBase.js';
+export default class TestView extends ViewBase{
     constructor(element) {
-        this._element = element;
-        this._onBtnClick = null;
+        super(element);
         this._elementStructure = this.parseElement();
-    }
-
-    get element(){
-        return this._element;
-    }
-
-    set element(value){
-        this._element = value;
-    }
-
-    get onBtnClick(){
-        return this._onBtnClick;
-    }
-
-    set onBtnClick(value){
-        this._onBtnClick = value;
     }
 
     parseElement (){
@@ -67,9 +51,7 @@ export default class TestView{
         result.querySelector('.test-header').textContent = resultModel.name;
         result.querySelector('.test-result').textContent = resultModel.text;
         btn.querySelector('.answer-btn').innerHTML = 'Закончить';
-        console.log(btn.onclick);
         btn.addEventListener('click', this._onBtnClick);      
-        console.log(btn.onclick);
         result.style.display = 'flex';
     }
 
