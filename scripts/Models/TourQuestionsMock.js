@@ -2,6 +2,9 @@
 /* jshint browser: true */
 /* jshint -W097 */
 
+/**
+ * Mocks for questions
+ */
 import Question from "/scripts/Models/QuestionModel.js";
 import Answer from "/scripts/Models/AnswerModel.js";
 

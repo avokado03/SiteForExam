@@ -3,6 +3,12 @@
 /* jshint -W097 */
 
 import TestEntity from "/scripts/Models/TestEntity.js";
+
+/**
+ * question's model
+ * picture - image of current question
+ * answers - answers of current question
+ */
 export default class Question extends TestEntity{
     constructor (id, text, picture, answers){
         super(id, text);

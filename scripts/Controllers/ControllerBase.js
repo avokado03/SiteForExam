@@ -2,6 +2,10 @@
 /* jshint browser: true */
 /* jshint -W097 */
 
+
+/*
+ * base class for other controllers
+ */ 
 export default class ControllerBase{
 
     constructor(view, model){
@@ -25,5 +29,6 @@ export default class ControllerBase{
         this._model = value;
     }
 
+    //for custom initialize implementation
     initialize(){}
 }

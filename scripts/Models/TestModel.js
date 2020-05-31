@@ -2,6 +2,9 @@
 /* jshint browser: true */
 /* jshint -W097 */
 
+/**
+ * full model of tour test
+ */
 export default class Test{
     constructor(id, questions, results){
         this._id = id;

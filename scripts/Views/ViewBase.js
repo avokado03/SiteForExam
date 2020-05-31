@@ -2,10 +2,15 @@
 /* jshint browser: true */
 /* jshint -W097 */
 
-export default class TestView{
+/**
+ * Basic class for other views
+ * element - DOM element for view representation
+ */
+export default class ViewBase{
     constructor(element) {
         this._element = element;
         this._onBtnClick = null;
+        this._elementStructure = this.parseElement();
     }
 
     get element(){
@@ -16,6 +21,7 @@ export default class TestView{
         this._element = value;
     }
 
+    //basic click event from controller
     get onBtnClick(){
         return this._onBtnClick;
     }
@@ -23,4 +29,7 @@ export default class TestView{
     set onBtnClick(value){
         this._onBtnClick = value;
     }
+
+    // for custom implementation
+    parseElement(){}
 }

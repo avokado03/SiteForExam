@@ -3,6 +3,10 @@
 /* jshint -W097 */
 
 import ControllerBase from '/scripts/Controllers/ControllerBase.js';
+
+/*
+ * controller for tour testing
+ */
 export default class TestController extends ControllerBase{
 
     constructor(view, model){
@@ -43,7 +47,6 @@ export default class TestController extends ControllerBase{
 
     getResult(){
         let results = this.model.results;
-        //
         results.forEach(result => {
             if (this._result>=result.from && this._result<=result.to){
                 this.view.renderResult(result);
@@ -56,6 +59,7 @@ export default class TestController extends ControllerBase{
         this.view.closeTest();
     }
 
+    //change event for init and end of test
     bindEvent(event){
         this.view.unbindBtnClick();            
         this.view.onBtnClick = event.bind(this);

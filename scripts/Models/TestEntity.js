@@ -2,6 +2,9 @@
 /* jshint browser: true */
 /* jshint -W097 */
 
+/**
+ * basic model entity
+ */
 export default class TestEntity{
     constructor(id, text){
         this._id = id;

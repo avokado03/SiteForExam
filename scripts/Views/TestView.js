@@ -3,12 +3,15 @@
 /* jshint -W097 */
 
 import ViewBase from '/scripts/Views/ViewBase.js';
+/**
+ * View for tour tests representation
+ */
 export default class TestView extends ViewBase{
     constructor(element) {
         super(element);
-        this._elementStructure = this.parseElement();
     }
 
+    //get element structure
     parseElement (){
         let question = this.element.querySelector('.main-contaner-test-question');
         let elements = {
@@ -32,6 +35,7 @@ export default class TestView extends ViewBase{
         this._elementStructure.btn.addEventListener('click', this.onBtnClick);
     }
 
+    //show current question
     renderQuestion (questionModel) {
         let img = `url('${questionModel.picture}')`;
         this._elementStructure.picture.style.backgroundImage = img;
@@ -39,6 +43,7 @@ export default class TestView extends ViewBase{
         this._renderAnswer(this._elementStructure.answers, questionModel.answers);
     }
 
+    //show current result
     renderResult(resultModel){
         this._elementStructure.questionText.style.display = 'none';
         this._elementStructure.answers.forEach(answer => {
@@ -55,6 +60,7 @@ export default class TestView extends ViewBase{
         result.style.display = 'flex';
     }
 
+    //show question's answers
     _renderAnswer(answers, answerModels){
         for (let i = 0; i < answers.length; i++) {
             const answer  = answers[i];
