@@ -3,6 +3,11 @@
 /* jshint -W097 */
 
 import TestEntity from '/scripts/Models/TestEntity.js';
+
+/*
+ * answer's model
+ * score - value of answer
+ */
 export default class Answer extends TestEntity {
     constructor(id, text, score)
     {

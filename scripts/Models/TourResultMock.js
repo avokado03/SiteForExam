@@ -3,7 +3,9 @@
 /* jshint -W097 */
 
 import Result from "/scripts/Models/ResultModel.js";
-
+/**
+ * Mocks for results
+ */
 export let results = [
     new Result(1, 'Вероятно, вы очарованы южным колоритом с его жаркой погодой, пляжами и экзотической едой.', 
         'Барбадос', '/img/night/first.jpg', 5, 7 ),

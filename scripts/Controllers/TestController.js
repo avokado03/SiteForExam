@@ -2,32 +2,18 @@
 /* jshint browser: true */
 /* jshint -W097 */
 
-export default class TestController{
+import ControllerBase from '/scripts/Controllers/ControllerBase.js';
+
+/*
+ * controller for tour testing
+ */
+export default class TestController extends ControllerBase{
 
     constructor(view, model){
-        this._view = view;
-        this._model = model;
+        super(view,model);
         this._currentQuestion = 0;
         this._result = 0;
     }
-
-    get view(){
-        return this._view;
-    }
-
-    set view(value){
-        this._view = value;
-    }
-
-    get model(){
-        return this._model;
-    }
-
-    set model(value){
-        this._model = value;
-    }
-
-    //todo: get/set
 
     initialize(){
         this.bindEvent(this.nextQuestion);
@@ -61,7 +47,6 @@ export default class TestController{
 
     getResult(){
         let results = this.model.results;
-        //
         results.forEach(result => {
             if (this._result>=result.from && this._result<=result.to){
                 this.view.renderResult(result);
@@ -74,6 +59,7 @@ export default class TestController{
         this.view.closeTest();
     }
 
+    //change event for init and end of test
     bindEvent(event){
         this.view.unbindBtnClick();            
         this.view.onBtnClick = event.bind(this);

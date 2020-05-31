@@ -2,29 +2,16 @@
 /* jshint browser: true */
 /* jshint -W097 */
 
-export default class TestView{
+import ViewBase from '/scripts/Views/ViewBase.js';
+/**
+ * View for tour tests representation
+ */
+export default class TestView extends ViewBase{
     constructor(element) {
-        this._element = element;
-        this._onBtnClick = null;
-        this._elementStructure = this.parseElement();
+        super(element);
     }
 
-    get element(){
-        return this._element;
-    }
-
-    set element(value){
-        this._element = value;
-    }
-
-    get onBtnClick(){
-        return this._onBtnClick;
-    }
-
-    set onBtnClick(value){
-        this._onBtnClick = value;
-    }
-
+    //get element structure
     parseElement (){
         let question = this.element.querySelector('.main-contaner-test-question');
         let elements = {
@@ -48,6 +35,7 @@ export default class TestView{
         this._elementStructure.btn.addEventListener('click', this.onBtnClick);
     }
 
+    //show current question
     renderQuestion (questionModel) {
         let img = `url('${questionModel.picture}')`;
         this._elementStructure.picture.style.backgroundImage = img;
@@ -55,6 +43,7 @@ export default class TestView{
         this._renderAnswer(this._elementStructure.answers, questionModel.answers);
     }
 
+    //show current result
     renderResult(resultModel){
         this._elementStructure.questionText.style.display = 'none';
         this._elementStructure.answers.forEach(answer => {
@@ -67,12 +56,11 @@ export default class TestView{
         result.querySelector('.test-header').textContent = resultModel.name;
         result.querySelector('.test-result').textContent = resultModel.text;
         btn.querySelector('.answer-btn').innerHTML = 'Закончить';
-        console.log(btn.onclick);
         btn.addEventListener('click', this._onBtnClick);      
-        console.log(btn.onclick);
         result.style.display = 'flex';
     }
 
+    //show question's answers
     _renderAnswer(answers, answerModels){
         for (let i = 0; i < answers.length; i++) {
             const answer  = answers[i];
