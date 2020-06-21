@@ -49,7 +49,6 @@
                     }
                 }
             }
-
             &-about{
                 &-content{
                     .about-content-info{
@@ -77,6 +76,16 @@
                     }
                     &-description{
                         font-size: 18px;
+                    }
+                }
+            }
+            &-test{
+                &-question{
+                    .test-header{
+                        font-size: 32px;
+                    }
+                    .answer label{
+                        font-size: 20px;
                     }
                 }
             }
@@ -165,7 +174,10 @@
                     }
                 }
             }
-
+            &-test{
+                grid-template-columns: 2fr 2fr;
+                column-gap: 30px;
+            }
             &-about{
                 gap: 0;
                 &-header{
@@ -186,6 +198,17 @@
         .footer-contaner{
             font-size: 12px;
             padding: 0 10px 10px 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+    .contaner{
+        .main-contaner{
+            &-test{
+                min-height: 300px;
+                column-gap: 20px;
+            }
         }
     }
 }
@@ -243,6 +266,21 @@
                         border-top-width: 2px;
                         border-bottom-width: 2px;
                     }
+                }
+            }
+
+            &-test{
+                min-height: 300px;
+                column-gap: 20px;
+                grid-template-columns: 1fr;
+                &-picture{
+                    display: none;
+                }
+                &-question{
+                    p{
+                        text-align: center;
+                    }
+                    align-items: center;
                 }
             }
 
