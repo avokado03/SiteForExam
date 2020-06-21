@@ -51,6 +51,7 @@ h1 {
     width: 100%;
     font-family: $general-font-family;
     color: #fff;
+    //header
     .header-contaner {
         width: 100%;
         min-height: 5vh;
@@ -81,14 +82,14 @@ h1 {
             }
         }
     }
-
+    //main
     .main-contaner {
         width: 100%;
         &-banner {
             display: grid;
             grid-template-columns: 12fr;
             background-size: cover;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat no-repeat;
             background-position: right;
             min-height: 90vh;
             justify-content: center;
@@ -110,7 +111,7 @@ h1 {
                 }
             }
         }
-
+        //burger menu
         &-burger{
             display: none;
             min-height: 90vh;
@@ -127,6 +128,7 @@ h1 {
             }
         }
 
+        //advantages
         &-advantages {
             min-height: 550px;
             background-blend-mode: color;
@@ -197,9 +199,10 @@ h1 {
             }
         }
 
+        //test
         &-test{
             display: none;
-            grid-template-columns: 1.74fr 3fr;
+            grid-template-columns: 2fr 2fr;
             padding: 15px 30px 15px 30px;
             column-gap: 30px;
             background-color: rgb(4, 92, 43);
@@ -231,7 +234,8 @@ h1 {
                 }
             }
         }
-
+        
+        //hot tours
         &-hot{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -273,6 +277,7 @@ h1 {
             }
         }
 
+        //imformation block
         &-about{
             width: 100%;
             display: flex;
@@ -307,7 +312,7 @@ h1 {
             }
         }
     }
-
+    //footer
     .footer-contaner{
         width: 100%;
         display: grid;

@@ -79,6 +79,10 @@ body {
                 color: $night-hover-color;
             }
         }
+
+        &-test{
+            background-color: $night-back-color;
+        }
     }
 
     .footer-contaner{

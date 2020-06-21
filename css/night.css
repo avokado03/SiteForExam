@@ -84,6 +84,10 @@ body {
   color: #e2f1d4;
 }
 
+.night .main-contaner-test {
+  background-color: #2F3C16;
+}
+
 .night .footer-contaner {
   background-color: #000;
 }

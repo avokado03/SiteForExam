@@ -79,6 +79,10 @@ body {
   background: url(/img/day/fifth.jpg);
 }
 
+.day .main-contaner-test {
+  background-color: #045c2b;
+}
+
 .day .footer-contaner {
   background-color: #000;
 }

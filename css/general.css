@@ -125,7 +125,7 @@ h1 {
   -ms-grid-columns: 12fr;
       grid-template-columns: 12fr;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat no-repeat;
   background-position: right;
   min-height: 90vh;
   -webkit-box-pack: center;
@@ -268,8 +268,8 @@ h1 {
 
 .contaner .main-contaner-test {
   display: none;
-  -ms-grid-columns: 1.74fr 3fr;
-      grid-template-columns: 1.74fr 3fr;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
   padding: 15px 30px 15px 30px;
   -webkit-column-gap: 30px;
           column-gap: 30px;
